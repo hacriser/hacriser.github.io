@@ -1,0 +1,675 @@
+body, html {
+    margin: 0;
+    padding:0;
+    background-color: rgb(232, 236, 236);
+}
+
+header {
+    height: 200px;
+    background-color: rgb(255, 227, 176);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 15pt;
+    border-bottom-right-radius: 15pt;
+    top: 0;
+    left: 0;
+}
+
+h1 {
+    color: rgb(237, 66, 66);
+    font-family: "raleway";
+    font-weight: 700;
+    font-style: bold;
+    font-size: 50pt;
+}
+
+main {
+    background-color: rgb(232, 236, 236);
+    height: 910px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+nav {
+    background-color: rgb(237, 66, 66);
+    width: 400px;
+    height: 80px;
+    border-bottom-left-radius: 15pt;
+    border-bottom-right-radius: 15pt;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-right: 40px;
+
+}
+
+li {
+    list-style-type: none;
+    padding: 5px;
+}
+
+a:hover, a:focus {
+    text-decoration: underline;
+    color: rgb(232, 236, 236);
+}
+
+a {
+    font-family: "raleway";
+    font-weight: 400;
+    font-style: light;
+    font-size: 20pt;
+    color: rgb(232, 236, 236);
+}
+
+footer {
+    height: 250px;
+    background-color: rgb(255, 227, 176);
+    display: flex;
+    align-items: center;    
+    justify-content: space-between;
+}
+
+h2 {
+    color: rgb(237, 66, 66);
+    font-family: "raleway";
+    font-weight: 700;
+    font-style: bold;
+    font-size: 40pt;
+    padding-left: 10%;
+}
+
+.contact {
+    background-color: rgb(237, 66, 66);
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin-right: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h3 {
+    text-align: center;
+    font-family: "Caveat", cursive;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 100pt;
+    color: rgb(232, 236, 236);
+    padding-top: 50px;
+    padding-right: 18px;
+}
+
+form.sign-in {
+    max-width: 90%;
+    height: 200px;
+    background: #e3e3e3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(232, 236, 236);
+    margin-bottom: 50;
+}
+
+fieldset#sign-in {
+    border: none; 
+    background-color: rgb(232, 236, 236);
+    max-width: 100%;
+    width: 90%;
+}
+
+
+label {
+    color: rgb(57, 52, 52); 
+    margin-bottom: 5px; 
+    font-family: "lato";
+    font-weight: 400;
+    font-style: Bold;
+    font-size: 20pt;
+}
+
+input[type="text"],
+input[type="password"] {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 10px; 
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 5pt;
+}
+
+textarea,
+select {
+background: rgba(255, 255, 255, 0.1);
+font-size: 16px;
+height: 100%;
+margin: 0;
+outline: 0;
+padding: 15px;
+width: 80%;
+background-color: #f5f5f5;
+box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+margin-bottom: 30px;
+transition: all 350ms;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: rgb(237, 66, 66); 
+    outline: none;
+}
+
+input:hover,
+input:focus,
+textarea:hover,
+textarea:focus {
+border: 2px solid rgb(237, 66, 66);
+}
+
+label:required {
+color: yellow;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+margin: 0 4px 8px 0;
+background: rgb(237, 66, 66);
+}
+
+select {
+padding: 6px;
+height: 32px;
+border-radius: 10pt;
+}
+
+h4 {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 40pt;
+    color: rgb(57, 52, 52);
+    height: 0px;
+}
+
+.submit {
+    padding: 19px 39px 18px 39px;
+    text-align: center;
+    font-style: normal;
+    border-radius: 10px;
+    border: 2px solid;
+    border-color: rgb(237, 66, 66);
+    background-color: rgb(232, 236,236);
+    margin-bottom: 10px;
+    color: rgb(237, 66, 66);
+    font-family: "Lato", sans-serif !important;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 40pt;
+    text-decoration: none;
+    min-width: 78%;
+    max-width: 400px;
+    display: block;
+    justify-content: center;
+    position: absolute;
+}
+
+form.sign-in, fieldset#sign-in {
+position: relative;
+}
+
+
+.submit:hover, .submit:focus {
+    background-color: rgb(237, 66, 66) !important;
+    color: rgb(232, 236,236) !important;
+    transition: .5s ease;
+    text-decoration: none;
+}
+
+.google {
+    padding: 19px 39px 18px 39px;
+    text-align: center;
+    font-style: normal;
+    border-radius: 10px;
+    border: 2px solid;
+    border-color: rgb(237, 66, 66);
+    background-color: rgb(237, 66, 66);
+    width: 100%;
+    margin-bottom: 10px;
+    color: rgb(232, 236, 236);
+    font-family: "Lato", sans-serif !important;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 20pt;
+    text-decoration: none;
+    margin-top: 80px;
+}
+
+.apple {
+    padding: 19px 39px 18px 39px;
+    text-align: center;
+    font-style: normal;
+    border-radius: 10px;
+    border: 2px solid;
+    border-color: rgb(237, 66, 66);
+    background-color: rgb(237, 66, 66);
+    width: 100%;
+    margin-bottom: 10px;
+    color: rgb(232, 236, 236);
+    font-family: "Lato", sans-serif !important;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 20pt;
+    text-decoration: none;
+
+}
+
+.google:hover, .google:focus, 
+.apple:hover, .apple:focus {
+    background-color: rgb(255, 209, 209) !important;
+    color: rgb(237, 66, 66) !important;
+    border-color: rgb(255, 209, 209);
+    transition: .5s ease;
+    border-color: rgb(237, 66, 66);
+}
+.continue-box {
+    width: 450px;
+    height: 0px;
+}
+
+.create {
+    height: 300px;
+    display: flex;
+    align-items: flex-end;
+}
+
+h5 {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 20pt;
+    color: rgb(57, 52, 52);
+    height: 0px;
+
+}
+
+a#link {
+    color: rgb(57, 52, 52);
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 20pt;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+h5:hover, h5:focus,
+a#link:hover, a#link:focus {
+    text-decoration: underline;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10px;
+    width: 100%;
+
+}
+
+.img-1,
+.img-2,
+.img-3 {
+    width: 90%; 
+    height: 200px;
+    margin: 20px auto; 
+    max-width: 1000px;
+    position: relative;
+    transition: transform 1s ease;
+}
+
+.img-1:hover,
+.img-2:hover,
+.img-3:hover  {
+    animation: image-hover .5s forwards;
+}
+
+@keyframes image-hover {
+    0% {
+    transform: scale(1);
+    }
+    100% {
+    transform: scale(1.1);
+    }
+    
+}
+
+.img-1:not(:hover),
+.img-2:not(:hover),
+.img-3:not(:hover) {
+    animation: image-shrink 1s forwards;
+}
+@keyframes image-shrink {
+    0% {
+    transform: scale(1.1);
+    }
+    100% {
+    transform: scale(1);
+    }
+}
+
+
+img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.qod-container {
+    height: 400px;
+    width: 500px;
+    border: 2px solid rgb(237, 66, 66);
+    border-radius: 10pt;
+    margin-top: 80px;
+}
+
+.qod {
+    height: 30%;
+    width: 100%;
+    background-color: rgb(237, 66, 66);
+    border-top-left-radius: 8pt;
+    border-top-right-radius: 8pt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h6 {
+    text-align: center;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 40pt;
+    color: rgb(232, 236, 236);
+}
+
+.quote-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+    width: 100%
+}
+h7 {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 20pt;
+    color: rgb(57, 52, 52);
+    text-align: center;
+}
+
+.own-quote {
+    padding: 19px 39px 18px 39px;
+    text-align: center;
+    font-style: normal;
+    border-radius: 10px;
+    border: 2px solid;
+    border-color: rgb(237, 66, 66);
+    background-color: rgb(237, 66, 66);
+    width: 420px;
+    margin-bottom: 10px;
+    color: rgb(232, 236, 236);
+    font-family: "Lato", sans-serif !important;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 20pt;
+    text-decoration: none;
+    margin-top: 80px;
+    text-decoration: none;
+    max-width: 100%;
+}
+
+.own-quote:hover, .own-quote:focus {
+    background-color: rgb(255, 209, 209) !important;
+    color: rgb(237, 66, 66) !important;
+    border-color: rgb(255, 209, 209);
+    transition: .5s ease;
+    border-color: rgb(237, 66, 66);
+    text-decoration: none;
+}
+
+.more {
+    background-color: rgb(255, 209, 209);
+    height: 420px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+h8 {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 32pt;
+    color: rgb(57, 52, 52);
+    text-align: center;
+    text-decoration: underline;
+    justify-self: center;
+}
+
+p {
+    font-family: "raleway";
+    font-weight: 400;
+    font-style: italic;
+    font-size: 16pt;
+    color: rgb(57, 52, 52);
+    margin-bottom: 0;
+}
+
+p#author {
+    margin: 0;
+}
+
+p#note {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16pt;
+    color: rgb(57, 52, 52);
+    text-align: center;
+    width: 70%;
+}
+
+textarea#publish {
+    width: 100%;
+    height: 250px; 
+    font-size: 24pt; 
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(57, 52, 52);
+    border: 2px solid;
+    padding: 10px; 
+    box-sizing: border-box; 
+    resize: none; 
+    border-radius: 5pt;
+    outline: none;
+}
+
+textarea#publish:hover, textarea#publish:focus {
+    border: 2px solid rgb(237, 66, 66);
+}
+
+input#author {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 5pt;
+    margin-bottom: 40px;
+    outline: none;
+    }
+
+label#author {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 28pt;
+    color: rgb(57, 52, 52);
+    margin-top: 40px;
+}
+
+fieldset#publication-fieldset {
+    height: 500px;
+    border: none;
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    flex: 1;
+    box-sizing: border-box;
+}
+
+.form-quote {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+p#note-two {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16pt;
+    color: rgb(57, 52, 52);
+    margin-top: 0px;
+    text-align: center;
+}
+
+p#tips {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16pt;
+    color: rgb(57, 52, 52);
+}
+
+h9 {
+    text-align: center;
+    font-family: "raleway";
+    font-weight: 400;
+    font-style: bold;
+    font-size: 12pt;
+    color: rgb(57, 52, 52);
+    margin-top: 10px;
+}
+
+a.publish {
+    padding: 19px 39px 18px 39px;
+    text-align: center;
+    font-style: normal;
+    border-radius: 10px;
+    border: 2px solid;
+    border-color: rgb(237, 66, 66);
+    background-color: rgb(232, 236,236);
+    margin-bottom: 10px;
+    color: rgb(237, 66, 66);
+    font-family: "Lato", sans-serif !important;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 40pt;
+    text-decoration: none;
+    width: 90%;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    max-width: 90%;
+    align-self: center;
+}
+
+.publish:hover, .publish:focus {
+    background-color: rgb(237, 66, 66);
+    color: rgb(232, 236,236);
+    transition: .5s ease;
+    text-decoration: none;
+}
+
+.form-quote {
+    max-width: 90%;
+    height: 200px;
+    background: #e3e3e3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(232, 236, 236);
+    margin-bottom: 50;
+    max-width: 90%;
+    height: 200px;
+    background: #e3e3e3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(232, 236, 236);
+    margin-bottom: 50;
+    width: 90%;
+}
+@media screen and (min-width: 768px) {
+    body{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 200px 1fr 1fr 1fr 250px;
+    }
+
+    main {
+        grid-column: 2 / 4;
+        grid-row: 2 / 5;
+    }
+
+    .image-container {
+        grid-column: 1 / 2;
+        grid-row: 2 / 5;
+    }
+
+    header {
+        grid-column: 1 / 4;
+        grid-row: 1 / 2;
+    }
+
+    footer {
+        grid-column: 1 / 4;
+        grid-row: 5 / 6;
+    }
+
+    .img-1,
+    .img-2,
+    .img-3 {
+        width: 70%;
+    }
+    
+    .more {
+        grid-column: 1 / 2;
+        grid-row: 2 / 5;
+        height: 100%;
+        padding: 40px;
+        width: 70%;
+    }
+
+    p {
+    margin-top: 80px;
+    }
+}
